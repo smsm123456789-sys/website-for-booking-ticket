@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حجز تذاكر الطيران</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1>موقع حجز تذاكر الطيران</h1>
+  <form id="booking-form">
+    <input type="text" id="from" placeholder="من" required>
+    <input type="text" id="to" placeholder="إلى" required>
+    <input type="date" id="departure-date" required>
+    <input type="date" id="return-date">
+    <input type="number" id="passengers" min="1" required>
+    <button type="submit">البحث عن الرحلات</button>
+  </form>
+  <ul id="flights-list"></ul>
+  <script src="script.js"></script>
+</body>
+</html>
